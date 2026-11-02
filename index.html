@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportZone - Đồ thể thao bóng đá & bóng chuyền</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">SPORT<span>ZONE</span></a>
+      <label class="search">
+        <input type="text" id="searchInput" placeholder="Tìm áo, giày, bóng...">
+      </label>
+      <button class="theme-btn" id="themeBtn" aria-label="Đổi chế độ sáng/tối">🌙</button>
+      <button class="cart-btn" id="cartBtn">Giỏ hàng <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-text">
+      <h1>Ra sân là<br>phải chất</h1>
+      <p>Áo đấu, giày, bóng và dụng cụ cho bóng đá và bóng chuyền. Hàng chính hãng, giao toàn quốc.</p>
+      <a href="#products" class="btn">Xem sản phẩm</a>
+    </div>
+  </section>
+
+  <main class="catalog" id="products">
+    <div class="container">
+      <h2 class="section-title">Chọn đồ cho môn bạn chơi</h2>
+      <div class="cats" id="chips"></div>
+      <div class="grid" id="productGrid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>SportZone</h3>
+        <p>Chuyên đồ thể thao bóng đá và bóng chuyền.</p>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Hotline: 0342071601</p>
+        <p>Email: vannhan12506@gmail.com</p>
+        <p>250 Bàu Cát, Phường Bảy Hiền, TP.HCM</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay">
+    <aside class="cart-panel">
+      <div class="cart-head">
+        <h2>Giỏ hàng</h2>
+        <button class="close" id="closeCart" aria-label="Đóng">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-foot">
+        <div class="total"><span>Tổng cộng</span><strong id="cartTotal">0 đ</strong></div>
+        <button class="btn full" id="checkoutBtn">Thanh toán</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
